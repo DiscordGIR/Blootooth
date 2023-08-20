@@ -34,6 +34,7 @@ async def on_ready():
     logger.info(
         f'Logged in as: {bot.user.name} - {bot.user.id} ({discord.__version__})')
     logger.info(f'Successfully logged in and booted...!')
+    await bot.change_presence(status=discord.Status.invisible)
 
 
 async def main():
